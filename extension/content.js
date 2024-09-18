@@ -68,7 +68,7 @@ function addAltTextToIcons() {
   );
   icons.forEach((icon) => {
     const iconID = getIconID(icon.src);
-    const keywords = keywordMap[iconID];
+    const keywords = KEYWORD_MAP[iconID];
     if (keywords) {
       icon.alt = keywords;
       icon.title = keywords;
