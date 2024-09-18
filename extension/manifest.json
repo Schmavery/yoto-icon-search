@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Yoto Icon Search",
+  "version": "1.0",
+  "description": "Adds a search bar to the Yoto icon picker",
+  "content_scripts": [
+    {
+      "matches": ["https://my.yotoplay.com/card/*"],
+      "js": ["./content.js"],
+      "css": ["./content.css"]
+    }
+  ]
+}
